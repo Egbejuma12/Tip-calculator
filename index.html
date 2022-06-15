@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>TIP CALCULATOR</h1>
+      <div class="container">
+        <div class="left">
+          <div class="bill">
+            <h2>Bill</h2>
+            <div class="input">
+              <input id="bill" type="number" />
+              <h2>$</h2>
+            </div>
+          </div>
+          <div class="select-tip">
+            <h2>Select Tip %</h2>
+            <div class="tip-btns" id="tips">
+              <a class="5%" href="#">5%</a>
+              <a class="10%" href="#">10%</a>
+              <a class="15%" href="#">15%</a>
+              <a class="25%" href="#">25%</a>
+              <a class="50%" href="#">50%</a>
+              <input id="custom" class="custom" type="number" placeholder="Custom"/>
+            </div>
+          </div>
+          <div class="people">
+            <h2>Number of People</h2>
+            <div class="input">
+              <input type="text" id="people" />
+              <p id="error" class="error">Can't be zero</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-top">
+            <div class="tip tip-amount">
+              <div class="tip-txt">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <div class="tip-figure" id="tip-figure">$0.00</div>
+            </div>
+            <div class="tip tip-total">
+              <div class="tip-txt">
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <div class="total-figure" id="total-figure">$0.00</div>
+            </div>
+          </div>
+          <div class="right-bottom">
+            <a id="resetBtn" href="#">Reset</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
